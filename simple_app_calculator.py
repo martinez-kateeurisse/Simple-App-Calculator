@@ -3,6 +3,7 @@
 #This program will create a Simple App Calculator
 
 #Display instructions regarding the operations
+print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
 #Ask the user to enter their chosen operation
 #Ask the user for two numbers
 #Perform the operation chosen with the two numbers
