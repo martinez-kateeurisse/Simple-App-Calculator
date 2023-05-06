@@ -33,7 +33,8 @@ while retry == "yes":
             #Display the result
             print(result)
         #Except function to handle errors
-        except:
+        except ZeroDivisionError:
+            print("Sorry! You are dividing by zero. Try changing the second number.")
             break
         #Ask if the users if they want to try again or not.
     retry = input("Do you want to try again?(yes or no) ")
