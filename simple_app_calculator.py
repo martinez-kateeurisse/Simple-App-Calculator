@@ -3,9 +3,9 @@
 #This program will create a Simple App Calculator
 
 #Initialize retrying variable
-retry = "yes"
+retry = "y"
 #Loop condition
-while retry == "yes":
+while retry == "y":
     #Use Python Function and appropriate Exceptions to capture errors during runtime.
     while True:
         #Try function to test the block of codes
@@ -43,7 +43,7 @@ while retry == "yes":
             print(invalid)             
         break
         #Ask if the users if they want to try again or not.
-    retry = input("Do you want to try again?(yes or no) ")
+    retry = input("Do you want to try again?(Enter 'y' if yes and any key if no) ")
     #If yes, the program will repeat Step 1.
 #If no, the program will display “Thank you!” and the program will exit
 print("Thank you!") 
