@@ -19,7 +19,9 @@ elif operation == 2:
 #If operation is multiplication
 elif operation == 3:
     result = num1 * num2
-    #If operation is division
+#If operation is division
+elif operation == 4:
+    result = num1/num2
 #Display the result
 #Ask if the users if they want to try again or not.
 #If yes
