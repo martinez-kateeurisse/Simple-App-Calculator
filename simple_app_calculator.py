@@ -2,6 +2,9 @@
 
 #This program will create a Simple App Calculator
 
+#Initialize retrying variable
+#Loop condition
+
 #Display instructions regarding the operations
 print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
 #Ask the user to enter their chosen operation
