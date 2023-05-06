@@ -11,11 +11,12 @@ while retry == "y":
         #Try function to test the block of codes
         try:
             #Display instructions regarding the operations
-            print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
+            print (" Enter + if Addition \n Enter - if Subtraction \n Enter * if Multiplication \n Enter / if Division")
             #Ask the user to enter their chosen operation
-            operation = int(input("Please enter the corresponding number for your chosen operator: "))
-            if  operation > 4 or operation < 1:
-                raise Exception("Sorry, input should only be 1, 2, 3, or 4:") 
+            operation = input("Please enter the corresponding symbol for your chosen operator: ")
+            operators = ['+', '-', '*', '/']
+            if  operation not in operators:
+                raise Exception("Sorry, input should only be +, -, *, or /:") 
             #Ask the user for two numbers
             num1 = float(input("Please input the first number: "))            
             num2 = float(input("Please input the second number: "))
@@ -39,8 +40,8 @@ while retry == "y":
             print("Sorry! You are dividing by zero. Try changing the second number.")
         except ValueError:
             print("Invalid input: Please input numbers only")
-        except Exception as invalid:
-            print(invalid)             
+        except Exception:
+            print("Sorry, input should only be +, -, *, or /d")             
         break
         #Ask if the users if they want to try again or not.
     retry = input("Do you want to try again?(Enter 'y' if yes and any key if no) ")
