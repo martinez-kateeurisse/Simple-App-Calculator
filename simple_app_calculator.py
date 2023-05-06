@@ -5,29 +5,29 @@
 #Initialize retrying variable
 retry = "yes"
 #Loop condition
-
-#Display instructions regarding the operations
-print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
-#Ask the user to enter their chosen operation
-operation = int(input("Please enter the corresponding number for your chosen operator: "))
-#Ask the user for two numbers
-num1 = float(input("Please input the first number: "))            
-num2 = float(input("Please input the second number: "))
-#Perform the operation chosen with the two numbers
-#If operation is addition
-if operation == 1:
-    result = num1 + num2     
-#If operation is subtraction
-elif operation == 2:
-    result = num1 - num2
-#If operation is multiplication
-elif operation == 3:
-    result = num1 * num2
-#If operation is division
-elif operation == 4:
-    result = num1/num2
-#Display the result
-print(result)
+while retry == "yes":
+    #Display instructions regarding the operations
+    print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
+    #Ask the user to enter their chosen operation
+    operation = int(input("Please enter the corresponding number for your chosen operator: "))
+    #Ask the user for two numbers
+    num1 = float(input("Please input the first number: "))            
+    num2 = float(input("Please input the second number: "))
+    #Perform the operation chosen with the two numbers
+    #If operation is addition
+    if operation == 1:
+        result = num1 + num2     
+    #If operation is subtraction
+    elif operation == 2:
+        result = num1 - num2
+    #If operation is multiplication
+    elif operation == 3:
+        result = num1 * num2
+    #If operation is division
+    elif operation == 4:
+        result = num1/num2
+    #Display the result
+    print(result)
 #Ask if the users if they want to try again or not.
 #If yes
     #repeat Step 1.
