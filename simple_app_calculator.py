@@ -10,7 +10,9 @@ operation = int(input("Please enter the corresponding number for your chosen ope
 num1 = float(input("Please input the first number: "))            
 num2 = float(input("Please input the second number: "))
 #Perform the operation chosen with the two numbers
-    #If operation is addition
+#If operation is addition
+if operation == 1:
+    result = num1 + num2     
     #If operation is subtraction
     #If operation is multiplication
     #If operation is division
