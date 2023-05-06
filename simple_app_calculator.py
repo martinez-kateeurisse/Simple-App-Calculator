@@ -5,6 +5,7 @@
 #Display instructions regarding the operations
 print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
 #Ask the user to enter their chosen operation
+operation = int(input("Please enter the corresponding number for your chosen operator: "))
 #Ask the user for two numbers
 #Perform the operation chosen with the two numbers
     #If operation is addition
