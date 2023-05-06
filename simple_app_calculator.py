@@ -2,10 +2,18 @@
 
 #This program will create a Simple App Calculator
 
-#The application will ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
-#The application will ask the user for two numbers
+#Display instructions regarding the operations
+#Ask the user to enter their chosen operation
+#Ask the user for two numbers
+#Perform the operation chosen with the two numbers
+    #If operation is addition
+    #If operation is subtraction
+    #If operation is multiplication
+    #If operation is division
 #Display the result
-#The application will ask if the user wants to try again or not.
-#If yes, repeat Step 1.
-#If no, Display “Thank you!” and the program will exit 
+#Ask if the users if they want to try again or not.
+#If yes
+    #repeat Step 1.
+#If no 
+    #Display “Thank you!” and the program will exit 
 #Use Python Function and appropriate Exceptions to capture errors during runtime.
