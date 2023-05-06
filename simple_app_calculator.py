@@ -7,6 +7,8 @@ print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplicat
 #Ask the user to enter their chosen operation
 operation = int(input("Please enter the corresponding number for your chosen operator: "))
 #Ask the user for two numbers
+num1 = float(input("Please input the first number: "))            
+num2 = float(input("Please input the second number: "))
 #Perform the operation chosen with the two numbers
     #If operation is addition
     #If operation is subtraction
