@@ -23,6 +23,7 @@ elif operation == 3:
 elif operation == 4:
     result = num1/num2
 #Display the result
+print(result)
 #Ask if the users if they want to try again or not.
 #If yes
     #repeat Step 1.
