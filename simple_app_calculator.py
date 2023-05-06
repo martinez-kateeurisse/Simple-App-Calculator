@@ -35,6 +35,8 @@ while retry == "yes":
         #Except function to handle errors
         except ZeroDivisionError:
             print("Sorry! You are dividing by zero. Try changing the second number.")
+        except ValueError:
+            print("Invalid input: Please input numbers only")    
             break
         #Ask if the users if they want to try again or not.
     retry = input("Do you want to try again?(yes or no) ")
