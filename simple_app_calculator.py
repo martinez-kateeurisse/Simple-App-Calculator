@@ -13,7 +13,9 @@ num2 = float(input("Please input the second number: "))
 #If operation is addition
 if operation == 1:
     result = num1 + num2     
-    #If operation is subtraction
+#If operation is subtraction
+elif operation == 2:
+    result = num1 - num2
     #If operation is multiplication
     #If operation is division
 #Display the result
