@@ -30,8 +30,7 @@ while retry == "yes":
     print(result)
     #Ask if the users if they want to try again or not.
     retry = input("Do you want to try again?(yes or no) ")
-#If yes
-    #repeat Step 1.
-#If no 
-    #Display “Thank you!” and the program will exit 
+    #If yes, the program will repeat Step 1.
+#If no, the program will display “Thank you!” and the program will exit
+print("Thank you!") 
 #Use Python Function and appropriate Exceptions to capture errors during runtime.
