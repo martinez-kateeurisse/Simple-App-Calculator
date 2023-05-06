@@ -3,6 +3,7 @@
 #This program will create a Simple App Calculator
 
 #Initialize retrying variable
+retry = "yes"
 #Loop condition
 
 #Display instructions regarding the operations
