@@ -14,6 +14,8 @@ while retry == "yes":
             print (" Enter 1 if Addition \n Enter 2 if Subtraction \n Enter 3 if Multiplication \n Enter 4 if Division")
             #Ask the user to enter their chosen operation
             operation = int(input("Please enter the corresponding number for your chosen operator: "))
+            if  operation > 4 or operation < 1:
+                raise Exception("Sorry, input should only be 1, 2, 3, or 4:") 
             #Ask the user for two numbers
             num1 = float(input("Please input the first number: "))            
             num2 = float(input("Please input the second number: "))
@@ -36,8 +38,10 @@ while retry == "yes":
         except ZeroDivisionError:
             print("Sorry! You are dividing by zero. Try changing the second number.")
         except ValueError:
-            print("Invalid input: Please input numbers only")    
-            break
+            print("Invalid input: Please input numbers only")
+        except Exception as invalid:
+            print(invalid)             
+        break
         #Ask if the users if they want to try again or not.
     retry = input("Do you want to try again?(yes or no) ")
     #If yes, the program will repeat Step 1.
