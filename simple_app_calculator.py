@@ -16,7 +16,9 @@ if operation == 1:
 #If operation is subtraction
 elif operation == 2:
     result = num1 - num2
-    #If operation is multiplication
+#If operation is multiplication
+elif operation == 3:
+    result = num1 * num2
     #If operation is division
 #Display the result
 #Ask if the users if they want to try again or not.
