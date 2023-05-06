@@ -28,7 +28,8 @@ while retry == "yes":
         result = num1/num2
     #Display the result
     print(result)
-#Ask if the users if they want to try again or not.
+    #Ask if the users if they want to try again or not.
+    retry = input("Do you want to try again?(yes or no) ")
 #If yes
     #repeat Step 1.
 #If no 
