@@ -16,22 +16,22 @@ while retry == "y":
             operation = input("Please enter the corresponding symbol for your chosen operator: ")
             operators = ['+', '-', '*', '/']
             if  operation not in operators:
-                raise Exception("Sorry, input should only be +, -, *, or /:") 
+                raise Exception("Sorry, operation should only be +, -, *, or /:") 
             #Ask the user for two numbers
             num1 = float(input("Please input the first number: "))            
             num2 = float(input("Please input the second number: "))
             #Perform the operation chosen with the two numbers
             #If operation is addition
-            if operation == 1:
+            if operation == "+":
                 result = num1 + num2     
             #If operation is subtraction
-            elif operation == 2:
+            elif operation == "-":
                 result = num1 - num2
             #If operation is multiplication
-            elif operation == 3:
+            elif operation == "*":
                 result = num1 * num2
             #If operation is division
-            elif operation == 4:
+            elif operation == "/":
                 result = num1/num2
             #Display the result
             print(result)
