@@ -7,6 +7,35 @@
 import tkinter as tk
 
 #Define the variables needed
+
+#Define the calculator program code
+def calculator():
+    try:
+        operation = input_operation.get()
+        operators = ["+", "-", "*", "/"]
+        if operation not in operators:
+            raise Exception("Sorry, input should only be +, -, *, or /")
+        num1 = float(input_num1.get())
+        num2 = float(input_num2.get())
+
+        if operation == "+":
+            result = num1 + num2
+        elif operation == "-":
+            result = num1 - num2
+        elif operation == "*":
+            result = num1 * num2
+        elif operation == "/":
+            result = num1 / num2
+        else:
+            result = "Invalid operator"
+
+        label_result.config(text="Result: " + str(result))
+    except ValueError:
+        label_result.config(text="Invalid input: Please input numbers only")
+    except ZeroDivisionError:
+        label_result.config(text="Sorry! You are dividing by zero. Try changing the second number.")
+    except Exception:
+        label_result.config(text="Sorry, input should only be +, -, *, or /")
 #Create the windows
 #Create labels
 #Create input fields
