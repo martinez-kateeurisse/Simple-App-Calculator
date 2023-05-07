@@ -36,6 +36,13 @@ def calculator():
         label_result.config(text="Sorry! You are dividing by zero. Try changing the second number.")
     except Exception:
         label_result.config(text="Sorry, input should only be +, -, *, or /")
+#Define retrying instructions
+def retry():
+    input_num1.delete(0, tk.END)
+    input_num2.delete(0, tk.END)
+    input_operation.delete(0, tk.END)
+    label_result.config(text="Result: ")
+
 #Create the windows
 #Create labels
 #Create input fields
