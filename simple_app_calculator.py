@@ -53,6 +53,11 @@ calc_window = tk.Tk()
 calc_window.title("Simple App Calculator") #Window Title
 calc_window.geometry("400x300") #Window Size
 calc_window.configure(bg="light cyan") #Window background
+
+#Center the title label
+calculator_title = tk.Label(calc_window, text="Simple App Calculator", font=("Courier 10 pitch", 14), bg=window['bg'])
+calculator_title.grid(row=0, column=0, columnspan=3, sticky='ew', padx=10)                     
+
 #Create labels
 #Create input fields
 #Create buttons
