@@ -5,6 +5,7 @@
 #Executing the program using tkinter
 #Import modules
 import tkinter as tk
+from PIL import Image, ImageTk
 
 #Introduction Window
 
@@ -17,6 +18,12 @@ introduction_window = tk.Tk()
 introduction_window.title("Introduction")
 introduction_window.geometry("400x300")
 introduction_window.configure(bg="wheat")
+# Set background image
+ending_bg = Image.open("calc_bg.png")  # Replace "ending_bg.jpg" with your own image file
+ending_bg = ending_bg.resize((400, 350), Image.ANTIALIAS)
+ending_bg_image = ImageTk.PhotoImage(ending_bg)
+bg_label = tk.Label(introduction_window, image=ending_bg_image)
+bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 #Create labels
 label_intro = tk.Label(introduction_window, text="Welcome!", font=("Arial", 16))
 instructions = tk.Label(introduction_window, text="Enter + if Addition \n Enter - if Subtraction \n Enter * if Multiplication \n Enter / if Division", font=("Arial", 12))
