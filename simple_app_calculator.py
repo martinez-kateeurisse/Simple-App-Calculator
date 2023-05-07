@@ -70,6 +70,10 @@ label_num2 = tk.Label(calc_window, text="Please input the second number:")
 label_num2.grid(row=3, column=0, padx=10, pady=10)
 
 #Create input fields
+#Input for the operation
+#Input for the first number
+#Input for the second number
+
 #Create buttons
 #Start the window loops
 
