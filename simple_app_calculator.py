@@ -29,6 +29,8 @@ button_open_calculator.pack(pady=10)
 #Start the introduction window loop
 introduction_window.mainloop()
 
+#Ending Window
+
 #Define the variables needed
 
 #Define the calculator program code
@@ -76,7 +78,8 @@ def retry():
 
 #Define a  variable to quit the calculator window
 def quit_calculator():
-    calc_window.quit()
+    calc_window.destroy()  # Close the calculator window
+    create_ending_window()
 
 #Create the windows
 #Main calculator window
