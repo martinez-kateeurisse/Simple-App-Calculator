@@ -6,6 +6,13 @@
 #Import modules
 import tkinter as tk
 
+#Introduction Window
+#Create the introduction window
+#Create labels
+#Create buttons
+#Start the introduction window loop
+
+
 #Define the variables needed
 
 #Define the calculator program code
@@ -112,3 +119,6 @@ button_no.grid(row=6, column=2, pady=10)
 
 #Start the window loops
 calc_window.mainloop()
+
+#If no, the program will display “Thank you!” 
+#print("Thank you message") 
