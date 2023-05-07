@@ -87,6 +87,9 @@ input_num2 = tk.Entry(calc_window)
 input_num2.grid(row=3, column=1, padx=10, pady=10)
 
 #Create buttons
+#Button for calculating the result
+#Yes button - If yes, the program will repeat step 1
+#No button - If no, the calculator program will exit
 #Start the window loops
 
 #Initialize retrying variable
