@@ -55,11 +55,13 @@ calc_window.geometry("400x300") #Window Size
 calc_window.configure(bg="light cyan") #Window background
 
 #Center the title label
-calculator_title = tk.Label(calc_window, text="Simple App Calculator", font=("Courier 10 pitch", 14), bg=window['bg'])
+calculator_title = tk.Label(calc_window, text="Simple App Calculator", font=("Courier 10 pitch", 14), bg=calc_window['bg'])
 calculator_title.grid(row=0, column=0, columnspan=3, sticky='ew', padx=10)                     
 
 #Create labels
 #Ask the user to enter the operation
+label_operator = tk.Label(calc_window, text="Operations (+, -, *, /):")
+label_operator.grid(row=1, column=0, padx=10, pady=10)
 #Ask the user to input the first number
 #Ask the user to input the second number
 
