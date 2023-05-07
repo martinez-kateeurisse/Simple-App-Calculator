@@ -91,6 +91,8 @@ input_num2.grid(row=3, column=1, padx=10, pady=10)
 button_calculate = tk.Button(calc_window, text="Calculate the Result", command=calculator)
 button_calculate.grid(row=4, column=1, padx=10, pady=10)
 #Yes button - If yes, the program will repeat step 1
+button_yes = tk.Button(calc_window, text="Yes", command=retry)
+button_yes.grid(row=4, column=1, padx=10, pady=10)
 #No button - If no, the calculator program will exit
 #Start the window loops
 
