@@ -77,6 +77,8 @@ input_operation.grid(row=1, column=1, padx=10, pady=10)
 input_num1 = tk.Entry(calc_window)
 input_num1.grid(row=2, column=1, padx=10, pady=10)
 #Input for the second number
+input_num2 = tk.Entry(calc_window)
+input_num2.grid(row=3, column=1, padx=10, pady=10)
 
 #Create buttons
 #Start the window loops
