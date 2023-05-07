@@ -42,6 +42,8 @@ def create_ending_window():
     label_ending.pack(pady=20)
     # Center the label
     label_ending.pack_configure(anchor="center")
+    # Start the ending window loop
+    ending_window.mainloop()
     
 #Define the variables needed
 
