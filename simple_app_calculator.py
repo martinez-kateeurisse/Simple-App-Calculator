@@ -10,32 +10,40 @@ import tkinter as tk
 
 #Define the calculator program code
 def calculator():
+    #Try function to test the block of codes
     try:
+        #Get the operation input from the user
         operation = input_operation.get()
+        #Operations' list
         operators = ["+", "-", "*", "/"]
+        #Raising exception
         if operation not in operators:
             raise Exception("Sorry, input should only be +, -, *, or /")
+        #Get two numbers from user
         num1 = float(input_num1.get())
         num2 = float(input_num2.get())
-
+        #If operation is addition (+)
         if operation == "+":
             result = num1 + num2
+        #If operation is subtraction (-)
         elif operation == "-":
             result = num1 - num2
+        #If operation is multiplication(*)
         elif operation == "*":
             result = num1 * num2
+        #If operation is division (/)
         elif operation == "/":
             result = num1 / num2
-        else:
-            result = "Invalid operator"
-
-        label_result.config(text="Result: " + str(result))
+        #Displaying result
+        label_result.config(text="The answer is: " + str(result))
+    #Except functions to handle errors
     except ValueError:
         label_result.config(text="Invalid input: Please input numbers only")
     except ZeroDivisionError:
         label_result.config(text="Sorry! You are dividing by zero. Try changing the second number.")
     except Exception:
         label_result.config(text="Sorry, input should only be +, -, *, or /")
+
 #Define retrying instructions
 def retry():
     input_num1.delete(0, tk.END)
@@ -45,7 +53,7 @@ def retry():
 
 #Define a  variable to quit the calculator window
 def quit_calculator():
-    window.quit()
+    calc_window.quit()
 
 #Create the windows
 #Main calculator window
