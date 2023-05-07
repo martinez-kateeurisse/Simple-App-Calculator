@@ -16,7 +16,7 @@ def open_calculator():
 #Create the introduction window
 introduction_window = tk.Tk()
 introduction_window.title("Introduction")
-introduction_window.geometry("400x300")
+introduction_window.geometry("400x350")
 introduction_window.configure(bg="wheat")
 # Set background image
 ending_bg = Image.open("calc_bg.png")  # Replace "ending_bg.jpg" with your own image file
@@ -25,10 +25,18 @@ ending_bg_image = ImageTk.PhotoImage(ending_bg)
 bg_label = tk.Label(introduction_window, image=ending_bg_image)
 bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 #Create labels
-label_intro = tk.Label(introduction_window, text="Welcome!", font=("Arial", 16))
-instructions = tk.Label(introduction_window, text="Enter + if Addition \n Enter - if Subtraction \n Enter * if Multiplication \n Enter / if Division", font=("Arial", 12))
+label_intro = tk.Label(introduction_window, text="Welcome, Dear User!", font=("Arial", 16, "bold"))
+instruction = tk.Label(introduction_window, text="Keep in mind the following:", font=("Arial", 10, "italic"), fg = "green")
+instruction_add = tk.Label(introduction_window, text="Enter  +  if Addition", font=("Arial", 12), fg = "red")
+instruction_sub = tk.Label(introduction_window, text="Enter  -   if Subtraction", font=("Arial", 12), fg = "red")
+instruction_mul = tk.Label(introduction_window, text="Enter  *  if Multiplication", font=("Arial", 12), fg = "red")
+instruction_div = tk.Label(introduction_window, text="Enter  /  if Division", font=("Arial", 12), fg = "red")
 label_intro.pack(pady=10)
-instructions.pack(pady=10)
+instruction.pack(pady=10)
+instruction_add.pack(pady=10)
+instruction_sub.pack(pady=10)
+instruction_mul.pack(pady=10)
+instruction_div.pack(pady=10)
 #Create buttons
 #Button for opening the calculator
 button_open_calculator = tk.Button(introduction_window, text="Open Calculator", command=open_calculator)
