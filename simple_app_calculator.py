@@ -43,6 +43,10 @@ def retry():
     input_operation.delete(0, tk.END)
     label_result.config(text="Result: ")
 
+#Define a  variable to quit the calculator window
+def quit_calculator():
+    window.quit()
+
 #Create the windows
 #Create labels
 #Create input fields
