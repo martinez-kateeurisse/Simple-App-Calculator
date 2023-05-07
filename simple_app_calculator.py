@@ -4,6 +4,8 @@
 
 #Executing the program using tkinter
 #Import modules
+import tkinter as tk
+
 #Define the variables needed
 #Create the windows
 #Create labels
