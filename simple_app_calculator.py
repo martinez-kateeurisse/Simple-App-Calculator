@@ -97,6 +97,11 @@ button_yes.grid(row=4, column=1, padx=10, pady=10)
 button_no = tk.Button(calc_window, text="No", command=quit_calculator)
 button_no.grid(row=4, column=2, padx=10, pady=10)
 
+#Organize the buttons using grid layout
+button_calculate.grid(row=4, column=0, pady=10)
+button_yes.grid(row=6, column=1, pady=10)
+button_no.grid(row=6, column=2, pady=10)
+
 #Start the window loops
 calc_window.mainloop()
 
