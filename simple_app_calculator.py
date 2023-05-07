@@ -30,7 +30,10 @@ button_open_calculator.pack(pady=10)
 introduction_window.mainloop()
 
 #Ending Window
+#Define a variable to create the ending window
+def create_ending_window():
 
+    
 #Define the variables needed
 
 #Define the calculator program code
