@@ -2,6 +2,15 @@
 
 #This program will create a Simple App Calculator
 
+#Executing the program using tkinter
+#Import modules
+#Define the variables needed
+#Create the windows
+#Create labels
+#Create input fields
+#Create buttons
+#Start the window loops
+
 #Initialize retrying variable
 retry = "y"
 #Loop condition
