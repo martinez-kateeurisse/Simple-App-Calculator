@@ -96,7 +96,9 @@ button_yes.grid(row=4, column=1, padx=10, pady=10)
 #No button - If no, the calculator program will exit
 button_no = tk.Button(calc_window, text="No", command=quit_calculator)
 button_no.grid(row=4, column=2, padx=10, pady=10)
+
 #Start the window loops
+calc_window.mainloop()
 
 #Initialize retrying variable
 #retry = "y"
