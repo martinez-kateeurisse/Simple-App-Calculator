@@ -40,6 +40,8 @@ def create_ending_window():
     #Create labels
     label_ending = tk.Label(ending_window, text="Thank you!! Have a great day!", font=("Courier 10 pitch", 16), fg = "red")
     label_ending.pack(pady=20)
+    # Center the label
+    label_ending.pack_configure(anchor="center")
     
 #Define the variables needed
 
