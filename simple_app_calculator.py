@@ -50,7 +50,7 @@ def calculator_window():
         except ZeroDivisionError:
             label_result.config(text="Sorry! You are dividing by zero. Try changing the second number.")
         except Exception:
-            label_result.config(text="Sorry, input should only be +, -, *, or /")
+            label_result.config(text="Sorry, operation should only be +, -, *, or /")
 
     #Define retrying instructions
     def retry():
