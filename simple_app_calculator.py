@@ -49,7 +49,7 @@ def retry():
     input_num1.delete(0, tk.END)
     input_num2.delete(0, tk.END)
     input_operation.delete(0, tk.END)
-    label_result.config(text="Result: ")
+    label_result.config(text="The answer is: ")
 
 #Define a  variable to quit the calculator window
 def quit_calculator():
