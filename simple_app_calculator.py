@@ -1,13 +1,13 @@
 #Kate Eurisse Martinez_BSCPE 1-5_Simple App Calculator
 
-#This program will create a Simple App Calculator
+#This program will create a Simple App Calculator; where the user will input the operation as well as the two numbers that they want to calculate.
+#The program will use exception handling (try-catch method) to handle user input errors.
 
 #Executing the program using tkinter
+
 #Import modules
 import tkinter as tk
 from PIL import Image, ImageTk
-
-#Introduction Window
 
 #Define a variable to open the calculator
 def open_calculator():
@@ -139,6 +139,8 @@ def create_ending_window():
     # Start the ending window loop
     ending_window.mainloop()
 
+#Introduction Window
+
 #Create the introduction window
 introduction_window = tk.Tk()
 introduction_window.title("Introduction")
@@ -169,3 +171,5 @@ button_open_calculator = tk.Button(introduction_window, text="Open Calculator", 
 button_open_calculator.pack(pady=10)
 #Start the introduction window loop
 introduction_window.mainloop()
+
+#END
