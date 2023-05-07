@@ -26,7 +26,7 @@ def calculator_window():
             operators = ["+", "-", "*", "/"]
             #Raising exception
             if operation not in operators:
-                raise Exception("Sorry, input should only be +, -, *, or /")
+                raise Exception("Sorry, operation should only be +, -, *, or /")
             #Get two numbers from user
             num1 = float(input_num1.get())
             num2 = float(input_num2.get())
