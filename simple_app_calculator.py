@@ -8,6 +8,10 @@ import tkinter as tk
 
 #Introduction Window
 #Create the introduction window
+introduction_window = tk.Tk()
+introduction_window.title("Introduction")
+introduction_window.geometry("400x300")
+introduction_window.configure(bg="wheat")
 #Create labels
 #Create buttons
 #Start the introduction window loop
