@@ -32,8 +32,12 @@ introduction_window.mainloop()
 #Ending Window
 #Define a variable to create the ending window
 def create_ending_window():
+    # Create the ending window
+    ending_window = tk.Tk()
+    ending_window.title("Ending Window!") #Window title
+    ending_window.geometry("300x100") #Window size
+    ending_window.configure(bg="wheat") #Window background
 
-    
 #Define the variables needed
 
 #Define the calculator program code
