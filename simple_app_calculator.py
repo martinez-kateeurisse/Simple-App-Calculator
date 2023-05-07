@@ -37,7 +37,10 @@ def create_ending_window():
     ending_window.title("Ending Window!") #Window title
     ending_window.geometry("300x100") #Window size
     ending_window.configure(bg="wheat") #Window background
-
+    #Create labels
+    label_ending = tk.Label(ending_window, text="Thank you!! Have a great day!", font=("Courier 10 pitch", 16), fg = "red")
+    label_ending.pack(pady=20)
+    
 #Define the variables needed
 
 #Define the calculator program code
