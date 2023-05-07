@@ -72,6 +72,8 @@ label_num2.grid(row=3, column=0, padx=10, pady=10)
 label_retry = tk.Label(calc_window, text="Do you want to try again?")
 label_retry.grid(row = 6, column = 0, padx=10, pady=10)
 #Displaying the result
+label_result = tk.Label(calc_window, text="The answer is: ")
+label_result.grid(row=5, column=0, columnspan=3, padx=10, pady=10)
 
 #Create input fields
 #Input for the operation
