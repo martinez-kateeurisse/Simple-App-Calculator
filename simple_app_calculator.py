@@ -7,6 +7,11 @@
 import tkinter as tk
 
 #Introduction Window
+
+#Define a variable to open the calculator
+def open_calculator():
+    introduction_window.destroy()  # Close the introduction window
+    calculator()
 #Create the introduction window
 introduction_window = tk.Tk()
 introduction_window.title("Introduction")
