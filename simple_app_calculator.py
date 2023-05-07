@@ -18,6 +18,9 @@ instructions = tk.Label(introduction_window, text="Enter + if Addition \n Enter 
 label_intro.pack(pady=10)
 instructions.pack(pady=10)
 #Create buttons
+#Button for opening the calculator
+button_open_calculator = tk.Button(introduction_window, text="Open Calculator", command=open_calculator)
+button_open_calculator.pack(pady=10)
 #Start the introduction window loop
 
 
