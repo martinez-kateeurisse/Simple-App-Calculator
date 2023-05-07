@@ -59,6 +59,10 @@ calculator_title = tk.Label(calc_window, text="Simple App Calculator", font=("Co
 calculator_title.grid(row=0, column=0, columnspan=3, sticky='ew', padx=10)                     
 
 #Create labels
+#Ask the user to enter the operation
+#Ask the user to input the first number
+#Ask the user to input the second number
+
 #Create input fields
 #Create buttons
 #Start the window loops
