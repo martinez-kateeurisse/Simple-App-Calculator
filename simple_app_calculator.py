@@ -13,6 +13,10 @@ introduction_window.title("Introduction")
 introduction_window.geometry("400x300")
 introduction_window.configure(bg="wheat")
 #Create labels
+label_intro = tk.Label(introduction_window, text="Welcome!", font=("Arial", 16))
+instructions = tk.Label(introduction_window, text="Enter + if Addition \n Enter - if Subtraction \n Enter * if Multiplication \n Enter / if Division", font=("Arial", 12))
+label_intro.pack(pady=10)
+instructions.pack(pady=10)
 #Create buttons
 #Start the introduction window loop
 
