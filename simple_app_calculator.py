@@ -51,6 +51,7 @@ def quit_calculator():
 #Main calculator window
 calc_window = tk.Tk()
 calc_window.title("Simple App Calculator") #Window Title
+calc_window.geometry("400x300") #Window Size
 
 #Create labels
 #Create input fields
