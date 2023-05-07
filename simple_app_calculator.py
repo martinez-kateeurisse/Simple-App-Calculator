@@ -22,7 +22,7 @@ instructions.pack(pady=10)
 button_open_calculator = tk.Button(introduction_window, text="Open Calculator", command=open_calculator)
 button_open_calculator.pack(pady=10)
 #Start the introduction window loop
-
+introduction_window.mainloop()
 
 #Define the variables needed
 
