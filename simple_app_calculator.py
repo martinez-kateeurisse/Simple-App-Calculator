@@ -68,6 +68,8 @@ label_num1.grid(row=2, column=0, padx=10, pady=10)
 #Ask the user to input the second number
 label_num2 = tk.Label(calc_window, text="Please input the second number:")
 label_num2.grid(row=3, column=0, padx=10, pady=10)
+#Ask the user if they want to try again
+#Displaying the result
 
 #Create input fields
 #Input for the operation
