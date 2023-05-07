@@ -48,6 +48,9 @@ def quit_calculator():
     window.quit()
 
 #Create the windows
+#Main calculator window
+calc_window = tk.Tk()
+
 #Create labels
 #Create input fields
 #Create buttons
