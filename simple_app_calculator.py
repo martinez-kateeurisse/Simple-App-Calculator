@@ -63,6 +63,8 @@ calculator_title.grid(row=0, column=0, columnspan=3, sticky='ew', padx=10)
 label_operator = tk.Label(calc_window, text="Operations (+, -, *, /):")
 label_operator.grid(row=1, column=0, padx=10, pady=10)
 #Ask the user to input the first number
+label_num1 = tk.Label(calc_window, text="Please input the first number:")
+label_num1.grid(row=2, column=0, padx=10, pady=10)
 #Ask the user to input the second number
 
 #Create input fields
