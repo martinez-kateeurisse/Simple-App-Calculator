@@ -74,6 +74,8 @@ label_num2.grid(row=3, column=0, padx=10, pady=10)
 input_operation = tk.Entry(calc_window)
 input_operation.grid(row=1, column=1, padx=10, pady=10)
 #Input for the first number
+input_num1 = tk.Entry(calc_window)
+input_num1.grid(row=2, column=1, padx=10, pady=10)
 #Input for the second number
 
 #Create buttons
