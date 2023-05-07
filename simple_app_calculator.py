@@ -50,10 +50,10 @@ def create_ending_window():
     # Create the ending window
     ending_window = tk.Tk()
     ending_window.title("Ending Window!") #Window title
-    ending_window.geometry("300x100") #Window size
+    ending_window.geometry("350x70") #Window size
     ending_window.configure(bg="wheat") #Window background
     #Create labels
-    label_ending = tk.Label(ending_window, text="Thank you!! Have a great day!", font=("Courier 10 pitch", 16), fg = "red")
+    label_ending = tk.Label(ending_window, text="Thank you!! Have a great day!", font=("Courier 10 pitch", 16, "bold", "italic"), fg = "red")
     label_ending.pack(pady=20)
     # Center the label
     label_ending.pack_configure(anchor="center")
