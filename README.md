@@ -8,3 +8,25 @@
 5. If yes, repeat Step 1.
 6. If no, Display “Thank you!” and the program will exit 
 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
+
+## Execution
+  * The program will be executed through tkinter.
+  * There will be three windows, introduction, calculator and ending.
+  * Introduction window and calculator window will be destroyed once a button has been triggered (quit button).
+  * The ending window will be manually exited by the user.
+  
+## Installation
+git bash installation:
+
+    git clone [link]
+
+    cd [project name]
+
+    npm install
+Or, to smoothly run the program, install or download the following modules:
+
+  * tkinter (pip install tk)
+  
+  * PIL (pip install Pillow) 
+
+(easiest way to install is through pip)
